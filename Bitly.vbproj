@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{BB7EB3B2-1BA6-4C4A-AED4-D72FB21D0162}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>adnmaster.Bitly</RootNamespace>
+    <AssemblyName>adnmaster.Bitly</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>adnmaster.Bitly.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>adnmaster.Bitly.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitlyClient.vb" />
+    <Compile Include="End Points\Data APIs\Models\HighValue.vb" />
+    <Compile Include="End Points\Data APIs\HighValueEndPoint.vb" />
+    <Compile Include="End Points\Data APIs\Models\Search Result\MinSearch.vb" />
+    <Compile Include="End Points\Data APIs\Models\Search Result\SearchCulture.vb" />
+    <Compile Include="End Points\Data APIs\Models\Search Result\SearchDomain.vb" />
+    <Compile Include="End Points\Data APIs\Models\Search Result\SearchLocation.vb" />
+    <Compile Include="End Points\Data APIs\Models\SearchResult.vb" />
+    <Compile Include="End Points\Data APIs\RealtimeEndPoint.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Category.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Content.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Info.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Language.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Location.vb" />
+    <Compile Include="End Points\Data APIs\Response\Link\Social.vb" />
+    <Compile Include="End Points\Data APIs\Response\Realtime\BurstingPhrases.vb" />
+    <Compile Include="End Points\Data APIs\Response\HighValue.vb" />
+    <Compile Include="End Points\Data APIs\Response\Realtime\ClickRate.vb" />
+    <Compile Include="End Points\Data APIs\Response\Realtime\HotPhrases.vb" />
+    <Compile Include="End Points\Data APIs\Response\SearchResult.vb" />
+    <Compile Include="End Points\Data APIs\SearchEndPoint.vb" />
+    <Compile Include="End Points\Data APIs\Models\Search Result\SearchField.vb" />
+    <Compile Include="End Points\Links\LinksEndPoint.vb" />
+    <Compile Include="End Points\Links\Responses\Info.vb" />
+    <Compile Include="End Points\Links\Responses\User\LinkEdit.vb" />
+    <Compile Include="End Points\Links\Responses\Lookup.vb" />
+    <Compile Include="End Points\Links\Responses\Shorten.vb" />
+    <Compile Include="End Points\Links\Responses\User\LinkSave.vb" />
+    <Compile Include="End Points\Links\Responses\User\Lookup.vb" />
+    <Compile Include="End Points\QR Codes\Model\QRCode.vb" />
+    <Compile Include="End Points\QR Codes\QRCodes.vb" />
+    <Compile Include="Extensions\Extensions.vb" />
+    <Compile Include="Http Client\GenericRestClient.vb" />
+    <Compile Include="End Points\Links\Models\LinkLookup.vb" />
+    <Compile Include="End Points\Links\Models\User\EditedLink.vb" />
+    <Compile Include="End Points\Links\Models\User\LinkLookup.vb" />
+    <Compile Include="End Points\Links\Models\PageTitle.vb" />
+    <Compile Include="End Points\Links\Responses\Expand.vb" />
+    <Compile Include="End Points\Links\Models\User\SavedLink.vb" />
+    <Compile Include="End Points\Links\Models\ShortUrl.vb" />
+    <Compile Include="End Points\Links\Models\TargetUrl.vb" />
+    <Compile Include="End Points\ResponseBase.vb" />
+    <Compile Include="Serialization\Json.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Http Client\RestBsonResponse.vb" />
+    <Compile Include="Http Client\RestException.vb" />
+    <Compile Include="Http Client\RestJsonResponse.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Memo.ignore" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+# Folders
+obj
+bin
+App_Data
+# packages
+_ReSharper.*
+
+# Files
+*.user
+*.suo
+*.compiled
+*.sln.cache
+*.vsdoc
+*.ignore
+
+# Files
+desktop.ini
+PrecompiledApp.config
