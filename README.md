@@ -15,6 +15,8 @@ _+ Basic OAuth (Access Token based on Username/Password)_
 
 **Endpoints**
 
+_+ [QRCodes]_
+
 _+ [Links]:_
 ```
 /v3/expand
@@ -24,6 +26,12 @@ _+ [Links]:_
 /v3/user/link_edit
 /v3/user/link_lookup
 /v3/user/link_save
+```
+
+_+ [Data APIs]:_
+```
+/v3/highvalue
+/v3/search
 ```
 
 _+ Preliminary code documentation_
@@ -36,7 +44,7 @@ Powered by bitly but "neither developed nor endorsed by bitly"
 Don't hesitate to contact me (CSharp code available :D)
 ***
 
-The MIT License (MIT)
+[The MIT License (MIT)](http://opensource.org/licenses/MIT) The MIT License (MIT)
 
 Copyright © 2013 adnmaster, Mohamed Amine SEBBANE
 
